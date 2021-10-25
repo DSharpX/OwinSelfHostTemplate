@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OwinSelfHostTemplate.Config;
+using System;
 
 namespace OwinSelfHostTemplate
 {
@@ -10,6 +7,8 @@ namespace OwinSelfHostTemplate
     {
         static void Main(string[] args)
         {
+            var server = new Server();
+            server.Start();
         }
     }
 }
